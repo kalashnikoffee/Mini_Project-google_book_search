@@ -1,9 +1,10 @@
-import React, { Component } from "react";
+import React, { useState } from "react";
 import logo from "./logo.svg";
 import "./App.css";
 import Nav from "./components/Nav";
 import Jumbotron from "./components/Jumbotron";
 import Search from "./components/Searchbar";
+import Results from "./components/Results";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <Nav/>
       <Jumbotron/>
       <Search/>
+      <Results/>
     </div>
   );
 }
