@@ -31,11 +31,7 @@ mongoose
     console.log('Google book search mini project Atlas MongoDB Connected!')
   );
 
-mongoose.connection.on('err', err => {
-  console.log(
-    `Google book search mini project Atlas MongoDB connection error: ${err.message} `
-  );
-});
+
 */
 
 // Define API routes here
@@ -55,6 +51,12 @@ mongoose
   .then(() =>
     console.log('Google book search mini project MongoDB Connected!')
   );
+
+mongoose.connection.on('err', err => {
+  console.log(
+    `Google book search mini project Atlas MongoDB connection error: ${err.message} `
+  );
+});
 
 app.listen(PORT, () => {
   console.log(`🌎 ==> API server now on port ${PORT}!`);
